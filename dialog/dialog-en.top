@@ -1,0 +1,8 @@
+topic: ~main ()
+language: English
+
+u:(What do you see) ^pCall(DeepNao.getVisibleObjects())
+c1:(_*) I see $1
+e1: I don't see any object at the moment
+
+#u:(Did you see _*) ^pCall()

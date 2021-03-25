@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.0" uuid="deep_nao">
+ <names>
+   <name lang="en_US">deep_nao</name>
+   <name lang="fr_FR">deep_nao</name>
+ </names>
+ <descriptions>
+   <description lang="en_US">Deep learning for NAO, applied to object recognition.</description>
+   <description lang="fr_FR">Apprentissage profond pour NAO, applique a la reconnaissance d'objets.</description>
+ </descriptions>
+ <supportedLanguages>
+  <language>fr_FR</language>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>fr_FR</language>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+   <behaviorContent path="behavior">
+     <nature>interactive</nature>
+     <autonomous>
+       <condition purpose="launchTrigger">
+         <![CDATA[
+         ('Launchpad/State' == "solitary"  && 'DeepNao/RobotFallen' == "False")
+       ]]>
+       </condition>
+       </autonomous>
+     <permissions>
+       <canRunOnPod/>
+       <canStandUp/>
+       <canSitDown/>
+       <canRunInSleep/>
+     </permissions>
+   </behaviorContent>
+ </contents>
+ <requirements>
+   <naoqiRequirement maxVersion="2.8" minVersion="2.8"/>
+   <robotRequirement model="NAO_H26"/>
+ </requirements>
+ <services>
+  <service autorun="true" name="deep_nao" execStart="/usr/bin/python2 scripts/deep_nao.py"/>
+  <service autorun="true" name="explorer" execStart="/usr/bin/python2 scripts/explorer.py"/>
+  <service autorun="true" name="stop_behavior" execStart="/usr/bin/python2 scripts/stop_behavior.py"/>
+ </services>
+</package>

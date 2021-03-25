@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>NAO Deep Learning - Upload a custom model</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link media="screen" href="style.css" rel="stylesheet" type="text/css">
+         <script src="robotutils.js"></script>
+
+    </head>
+<body>
+
+    <div id="main">
+        <div id="upload_model">
+            <h1 id="title">Upload a custom model</h1>
+            <div id="model_config">
+                <label id="config-input-label" for="config-input">
+                    Model config file (model.cfg):</label>
+                <input type="file" id="config-input"></input>
+            </div>
+            <div id="model_weight">
+                <label id="weight-input-label" for="weights-input">
+                    Model weight file (model.weights):</label>
+                <input type="file" id="weights-input"></input>
+            </div>
+            <div id="model_names_fr">
+                <label id="names-fr-input-label" for="names-fr-input">
+                    Objects names in French (objects.names.fr):</label>
+                <input type="file" id="names-fr-input"></input>
+            </div>
+            <div id="model_names_en">
+                <label id="names-en-input-label" for="names-en-input">
+                    Objects names in English (objects.names.en):</label>
+                <input type="file" id="names-en-input"></input>
+            </div>
+            <div class="space"></div>
+            <button type="button" id="upload" disabled>Upload files</button>
+        </div>
+    </div>
+    <div id="blackout">
+        <div id="loadingicon" class="loadingicon">
+            <span id="loadingtext" class="loadingtext">Uploading...</span>
+        </div>
+    </div>
+
+    <script src="upload.js"></script>
+</body>

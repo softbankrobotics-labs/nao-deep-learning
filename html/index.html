@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>NAO Deep Learning</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link media="screen" href="style.css" rel="stylesheet" type="text/css">
+         <script src="robotutils.js"></script>
+         <script src="index.js"></script>
+    </head>
+<body>
+    <div id="main">
+        <div id="img_div">
+            <img id="img"/>
+        </div>
+        <div id="controls">
+            <div class="line">
+                <button id="describe">Describe what you see</button>
+            </div>
+            <div class="line">
+                <span id="continuous_describe_label" class="label">Describe continuously:</span>
+                <label class="switch">
+                    <input id="continuous_description_checkbox" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="line">
+                <span id="continuous_explore_label" class="label">Explore continuously:</span>
+                <label class="switch">
+                    <input id="continuous_exploration_checkbox" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="use_custom_model_line" class="line">
+                <span id="use_custom_model_label" class="label">Use custom model:</span>
+                <label class="switch">
+                    <input id="use_custom_model_checkbox" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="not_running">
+        DeepNao service is not running. Double click on NAO chest button.
+    </div>
+</body>
