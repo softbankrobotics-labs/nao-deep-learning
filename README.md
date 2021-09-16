@@ -21,6 +21,10 @@ You can also train your own deep learning model on your own object image dataset
    * [5. Training your custom model](#5-training-your-custom-model)
    * [6. Uploading your custom model to the app](#6-uploading-your-custom-model-to-the-app)
 
+# Video
+
+Please see the following video on YouTube for some more information about how this project works in practice: https://youtu.be/jf2dd74_q4o
+
 ## 1. Hardware & software compatibility
 
 This app is compatible with NAO V6, and [Naoqi 2.8.6](https://developer.softbankrobotics.com/blog/nao6/naoqi-developer-guide/nao6-naoqi-28-286-release-note)
