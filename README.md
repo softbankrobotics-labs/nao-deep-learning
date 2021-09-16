@@ -23,7 +23,7 @@ You can also train your own deep learning model on your own object image dataset
 
 # Video
 
-Please see the following video on YouTube for some more information about how this project works in practice: https://youtu.be/jf2dd74_q4o
+Please see the following video on YouTube for some more information about how this project works in practice: https://youtu.be/NwHXtjw7TG0
 
 ## 1. Hardware & software compatibility
 
